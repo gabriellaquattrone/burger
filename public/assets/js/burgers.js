@@ -3,8 +3,8 @@ $(".create-form").on("submit", function(event) {
     event.preventDefault();
 
     let newBurger = {
-      name: $("#burgerName").val().trim(),
-    //   devoured: $("[name=devoured]:unchecked").val().trim()
+      burger_name: $("#burgerName").val().trim(),
+      devoured: $("[name=devoured]:checked").val().trim()
     };
 
     // Send the POST request.
@@ -14,7 +14,6 @@ $(".create-form").on("submit", function(event) {
     }).then(
       function() {
         console.log("created new burger");
-        alert("Created new burger");
         // Reload the page to get the updated list
         location.reload();
       }
