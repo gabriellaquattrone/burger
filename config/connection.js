@@ -26,3 +26,5 @@ connection.connect(function(err) {
 
 // Export connection for our ORM to use.
 module.exports = connection;
+
+// fixed the bug pushing to heroku
