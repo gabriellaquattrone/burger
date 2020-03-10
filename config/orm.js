@@ -1,5 +1,5 @@
 // Import MySQL connection.
-let connection = require("../config/connection.js");
+let connection = require("./connection.js");
 
 // Reference: Activity 17 from 14-handlebars
 // Helper function for SQL syntax.
